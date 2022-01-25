@@ -98,7 +98,34 @@ void cuartoEjercicio(){
 }
 
 void quintoEjercicio(){
+    int opcion;
+    float valorConvertido, valor;
 
+    cout << "Ingrese el valor en metros a convertir: \n";
+    cin >> valor;
+    if(valor <= 0){
+        cout << "Error: Medida debe ser mayor a 0...";
+    }else{
+        cout << "Ingrese la opción (ej. 1): \n 1. Convertir metros a centímetros \n 2. Convertir metros a decímetros \n 3. Metros a Kilometros \n";
+        cin >> opcion;
+        switch (opcion) {
+            case 1:
+                valorConvertido = valor*100;
+                printf("%.2fm equivale a %.2fcm", valor, valorConvertido);
+                break;
+            case 2:
+                valorConvertido = valor*10;
+                printf("%.2fm equivale a %.2fdm", valor, valorConvertido);
+                break;
+            case 3:
+                valorConvertido = valor/1000;
+                printf("%.2fm equivale a %.2fkm", valor, valorConvertido);
+                break;
+            default:
+                cout << "Error: Opción no existe...";
+                break;
+        }
+    }
 }
 
 int main() {
@@ -106,6 +133,6 @@ int main() {
     //segundoEjercicio();
     //tercerEjercicio();
     //cuartoEjercicio();
-    quintoEjercicio();
+    //quintoEjercicio();
     return 0;
 }
