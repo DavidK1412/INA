@@ -1,0 +1,3 @@
+/home/david/dev/datasys/INA/parcial_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/david/dev/datasys/INA/parcial_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/david/dev/datasys/INA/parcial_cpp/cmake-build-debug/CMakeFiles/parcial_cpp.dir
